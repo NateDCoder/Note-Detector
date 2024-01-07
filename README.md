@@ -5,7 +5,8 @@ This is the first version of a Note Detector, a simple script that detects circu
 ## How to Use
 
 1. **Clone the Repository:**
+   ```bash
    git clone https://github.com/your-username/note-detector.git
-2. **Install Dependencies**
-   pip install opencv-python
-   pip install numpy
+3. **Install Dependencies:**
+   ```bash
+   pip install opencv-python numpy
