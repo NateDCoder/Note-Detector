@@ -1,2 +1,11 @@
-First version of a Note Detector
-Important thing to know is I just did a lot of copy and pasting of code and tune random number til I got something I wanted.
+# Note Detector
+
+This is the first version of a Note Detector, a simple script that detects circular shapes representing notes in an image. The primary functionality is based on basic image processing and circle detection techniques using OpenCV. I did a bunch of random copy and pasting and tuning numbers so I dont know entirely how everything works and if you run into problems I might not know how to solve it but dont be afraid to ask any question and I will try my best to answer it.
+
+## How to Use
+
+1. **Clone the Repository:**
+   git clone https://github.com/your-username/note-detector.git
+2. **Install Dependencies**
+   pip install opencv-python
+   pip install numpy
