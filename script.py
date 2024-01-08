@@ -34,7 +34,7 @@ def display_only_orange(image_path):
 
     # Use Hough Circle Transform to detect circles
     circles = cv2.HoughCircles(
-        blurred, cv2.HOUGH_GRADIENT, dp=1, minDist=20, param1=50, param2=20, minRadius=50, maxRadius=1000
+        blurred, cv2.HOUGH_GRADIENT, dp=1, minDist=20, param1=50, param2=25, minRadius=45, maxRadius=1000
     )
 
     # If circles are found, draw them on the image
@@ -58,9 +58,12 @@ if __name__ == "__main__":
     # Call the function to display only orange
     img1 = display_only_orange(image_path)
     img2 = display_only_orange('note.jpg')
+    img3 = display_only_orange('note3.png')
     img1_scaled = cv2.resize(img1, (0, 0), fx=0.5, fy=0.5)
     img2_scaled = cv2.resize(img2, (0, 0), fx=0.5, fy=0.5)
+    img3_scaled = cv2.resize(img3, (0, 0), fx=0.5, fy=0.5)
     cv2.imshow('Noisy Image', img1_scaled)
     cv2.imshow('Clear Image', img2_scaled)
+    cv2.imshow('Overlap', img3_scaled)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
